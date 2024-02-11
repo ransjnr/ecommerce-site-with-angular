@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { Product } from '../products';
 
 @Component({
   selector: 'app-product-alerts',
@@ -8,5 +9,6 @@ import { Component } from '@angular/core';
   styleUrl: './product-alerts.component.css'
 })
 export class ProductAlertsComponent {
-
+  @Input() product: Product | undefined
 }
+
