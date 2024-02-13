@@ -14,12 +14,16 @@ import { ProductListComponent } from './product-list/product-list.component';
     RouterModule.forRoot([
       { path: '', component: ProductListComponent },
     ]),
-    ProductAlertsComponent,
   ],
   declarations: [
     AppComponent,
     TopBarComponent,
     ProductListComponent,
+          // Import the component
+  ProductAlertsComponent 
+  ],
+  exports: [
+    ProductAlertsComponent // export it
   ],
   bootstrap: [
     AppComponent
